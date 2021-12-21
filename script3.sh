@@ -67,7 +67,7 @@ resource "spotinst_elastigroup_aws" "andrew_asg" {
 }
 EOF
     #### Terraform command to import state from existing Elastigroup (that was created by Import ASG call)
-
+    sleep 5
     terraform import spotinst_elastigroup_aws.${ELASTIGROUP_NAME} ${ELASTIGROUP_ID}
 
 #### How do I validate this worked? ####

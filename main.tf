@@ -43,7 +43,6 @@ variable "region" {
   default = "us-west-2"
 }
 
-/* ##Commenting out null_resource for now and using script3.sh in place
 resource "null_resource" "api_call" {
     provisioner "local-exec" {
         command = <<EOT
@@ -103,4 +102,3 @@ EOF
         EOT
     }
 }
-*/
